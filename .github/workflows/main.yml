@@ -1,0 +1,11 @@
+name: Test Workflow
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Step 1: Building..."
+      - run: sleep 10
+      - run: echo "Step 2: Testing..."
+      - run: sleep 5
+      - run: echo "Step 3: Done."
