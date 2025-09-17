@@ -1,11 +1,11 @@
 name: Test Workflow
 on: [push]
 jobs:
-  build:
+  build: # This line should have 2 spaces of indentation
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Step 1: Building..."
-      - run: sleep 10
-      - run: echo "Step 2: Testing..."
-      - run: sleep 5
-      - run: echo "Step 3: Done."
+      - run: echo "Step 1:Building..." # This line should have 6 spaces of indentation
+      - run: sleep 10 # This line should have 6 spaces of indentation
+      - run: echo "Step 2:Testing..." # This line should have 6 spaces of indentation
+      - run: sleep 5 # This line should have 6 spaces of indentation
+      - run: echo "Step 3:Done." # This line should have 6 spaces of indentation
