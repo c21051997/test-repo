@@ -9,3 +9,8 @@ jobs:
       - run: echo "Step 2:Testing..." # This line should have 6 spaces of indentation
       - run: sleep 5 # This line should have 6 spaces of indentation
       - run: echo "Step 3:Done." # This line should have 6 spaces of indentation
+  test:
+    runs-on: ubuntu-latest
+    needs: build 
+    steps:
+      - run: echo "Testing..."
