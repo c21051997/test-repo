@@ -1,15 +1,15 @@
-name: Critical Path Test
+name: Parallelization Test
 on: [push]
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Building..."
+      - run: echo "Linting..."
       - run: sleep 10
-  test:
+  unit-tests:
     runs-on: ubuntu-latest
-    needs: build
+    needs: lint
     steps:
-      - run: echo "Testing..."
+      - run: echo "Running unit tests..."
       - run: sleep 10
