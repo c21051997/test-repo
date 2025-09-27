@@ -3,7 +3,7 @@ on: [push]
 jobs:
   simple-task:
     # Use the correct, valid label for a 16-core GitHub-hosted runner
-    runs-on: ubuntu-latest-4xl
+    runs-on: ubuntu-22.04
     steps:
     - name: A simple I/O task
       run: echo "Hello world" && sleep 30
