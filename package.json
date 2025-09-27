@@ -1,0 +1,11 @@
+{
+  "name": "test-repo",
+  "version": "1.0.0",
+  "description": "A repo for testing the DevOps Agent",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "author": "",
+  "license": "ISC"
+}
