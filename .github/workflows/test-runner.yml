@@ -2,7 +2,8 @@ name: Test Runner Analysis
 on: [pull_request]
 jobs:
   simple-task:
-    runs-on: ubuntu-latest-16-core # Intentionally oversized
+    # Use the correct, valid label for a 16-core GitHub-hosted runner
+    runs-on: ubuntu-latest-4xl
     steps:
     - name: A simple I/O task
       run: echo "Hello world" && sleep 30
