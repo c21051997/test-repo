@@ -1,0 +1,8 @@
+name: Test Runner Analysis
+on: [pull_request]
+jobs:
+  simple-task:
+    runs-on: ubuntu-latest-16-core # Intentionally oversized
+    steps:
+    - name: A simple I/O task
+      run: echo "Hello world" && sleep 30
