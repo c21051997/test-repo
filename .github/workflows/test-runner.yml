@@ -1,5 +1,5 @@
 name: Test Runner Analysis
-on: [pull_request]
+on: [push]
 jobs:
   simple-task:
     # Use the correct, valid label for a 16-core GitHub-hosted runner
