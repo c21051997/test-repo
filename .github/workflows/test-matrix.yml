@@ -1,0 +1,17 @@
+name: Test Matrix Analysis
+on: [pull_request]
+jobs:
+  test-py38:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.8'
+    - run: echo "testing python 3.8"
+  test-py39:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.9'
+    - run: echo "testing python 3.9"
