@@ -1,0 +1,11 @@
+name: Performance Test Workflow
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Consistent Workload
+        run: echo "Doing work..." && sleep 15
